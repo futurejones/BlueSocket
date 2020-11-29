@@ -20,7 +20,7 @@ jobs:
           gem install jazzy
       - name: create docs
         env:
-          GH_Token: ${{ secrets.GH_TOKEN }}
+          GH_PAGES: ${{ secrets.GH_PAGES }}
           USER_NAME: ${{ secrets.USER_NAME }}
           USER_EMAIL: ${{ secrets.USER_EMAIL }}
         run:  |
