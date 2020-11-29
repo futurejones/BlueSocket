@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SSLServiceDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/SSLServiceDelegate" class="dashAnchor"></a>
+    <a title="SSLServiceDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">Socket 1.0.200 Docs</a> (71% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">Socket Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SSLServiceDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Socket.html">Socket</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Socket/ProtocolFamily.html">– ProtocolFamily</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Socket/SocketType.html">– SocketType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Socket/SocketProtocol.html">– SocketProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Socket/Address.html">– Address</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Socket/Signature.html">– Signature</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Socket/Error.html">– Error</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/SSLError.html">SSLError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/fd_set.html">fd_set</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/SSLServiceDelegate.html">SSLServiceDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SocketReader.html">SocketReader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SocketWriter.html">SocketWriter</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SSLServiceDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">SSLServiceDelegate</span></code></pre>
+
+                </div>
+              </div>
+            <p>SSL Service Delegate Protocol</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Socket18SSLServiceDelegateP10initialize8asServerySb_tKF"></a>
+                    <a name="//apple_ref/swift/Method/initialize(asServer:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Socket18SSLServiceDelegateP10initialize8asServerySb_tKF">initialize(asServer:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialize SSL Service</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">initialize</span><span class="p">(</span><span class="nv">asServer</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>asServer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>True</code> for initializing a server, otherwise a client.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Socket18SSLServiceDelegateP12deinitializeyyF"></a>
+                    <a name="//apple_ref/swift/Method/deinitialize()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Socket18SSLServiceDelegateP12deinitializeyyF">deinitialize()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Deinitialize SSL Service</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deinitialize</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Socket18SSLServiceDelegateP8onAccept6socketyA2AC_tKF"></a>
+                    <a name="//apple_ref/swift/Method/onAccept(socket:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Socket18SSLServiceDelegateP8onAccept6socketyA2AC_tKF">onAccept(socket:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Processing on acceptance from a listening socket</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onAccept</span><span class="p">(</span><span class="nv">socket</span><span class="p">:</span> <span class="kt"><a href="../Classes/Socket.html">Socket</a></span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>socket</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The connected Socket instance.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Socket18SSLServiceDelegateP9onConnect6socketyA2AC_tKF"></a>
+                    <a name="//apple_ref/swift/Method/onConnect(socket:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Socket18SSLServiceDelegateP9onConnect6socketyA2AC_tKF">onConnect(socket:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Processing on connection to a listening socket</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">onConnect</span><span class="p">(</span><span class="nv">socket</span><span class="p">:</span> <span class="kt"><a href="../Classes/Socket.html">Socket</a></span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>socket</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The connected Socket instance.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Socket18SSLServiceDelegateP4send6buffer7bufSizeSiSV_SitKF"></a>
+                    <a name="//apple_ref/swift/Method/send(buffer:bufSize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Socket18SSLServiceDelegateP4send6buffer7bufSizeSiSV_SitKF">send(buffer:<wbr>bufSize:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Low level writer</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">send</span><span class="p">(</span><span class="nv">buffer</span><span class="p">:</span> <span class="kt">UnsafeRawPointer</span><span class="p">,</span> <span class="nv">bufSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>buffer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Buffer pointer.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bufSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Size of the buffer.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6Socket18SSLServiceDelegateP4recv6buffer7bufSizeSiSv_SitKF"></a>
+                    <a name="//apple_ref/swift/Method/recv(buffer:bufSize:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6Socket18SSLServiceDelegateP4recv6buffer7bufSizeSiSv_SitKF">recv(buffer:<wbr>bufSize:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Low level reader</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">recv</span><span class="p">(</span><span class="nv">buffer</span><span class="p">:</span> <span class="kt">UnsafeMutableRawPointer</span><span class="p">,</span> <span class="nv">bufSize</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>buffer</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Buffer pointer.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>bufSize</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Size of the buffer.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/ALPN"></a>
+                <a name="//apple_ref/swift/Section/ALPN" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/ALPN"></a>
+                  <h3 class="section-name"><p>ALPN</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/addSupportedAlpnProtocol(proto:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">addSupportedAlpnProtocol(proto:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Add a protocol to the list of supported ALPN protocol names. E.g. &lsquo;http/1.1&rsquo; and &lsquo;h2&rsquo;.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Property/negotiatedAlpnProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/">negotiatedAlpnProtocol</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The negotiated ALPN protocol that has been agreed upon during the handshaking phase.
+Will be <code>nil</code> if ALPN hasn&rsquo;t been used or requestsed protocol is not available.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://github.com/Kitura/BlueSocket" target="_blank" rel="external">IBM and the Kitura project authors</a>. All rights reserved. (Last updated: 2020-11-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

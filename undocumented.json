@@ -1,0 +1,334 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 40,
+      "symbol": "Socket.SOCKET_MINIMUM_READ_BUFFER_SIZE",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 41,
+      "symbol": "Socket.SOCKET_DEFAULT_READ_BUFFER_SIZE",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 42,
+      "symbol": "Socket.SOCKET_DEFAULT_SSL_READ_BUFFER_SIZE",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 43,
+      "symbol": "Socket.SOCKET_MAXIMUM_SSL_READ_BUFFER_SIZE",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 44,
+      "symbol": "Socket.SOCKET_DEFAULT_MAX_BACKLOG",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 46,
+      "symbol": "Socket.SOCKET_MAX_DARWIN_BACKLOG",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 49,
+      "symbol": "Socket.SOCKET_INVALID_PORT",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 50,
+      "symbol": "Socket.SOCKET_INVALID_DESCRIPTOR",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 52,
+      "symbol": "Socket.INADDR_ANY",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 54,
+      "symbol": "Socket.NO_HOSTNAME",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 58,
+      "symbol": "Socket.SOCKET_ERR_DOMAIN",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 60,
+      "symbol": "Socket.SOCKET_ERR_UNABLE_TO_CREATE_SOCKET",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 61,
+      "symbol": "Socket.SOCKET_ERR_BAD_DESCRIPTOR",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 62,
+      "symbol": "Socket.SOCKET_ERR_ALREADY_CONNECTED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 63,
+      "symbol": "Socket.SOCKET_ERR_NOT_CONNECTED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 64,
+      "symbol": "Socket.SOCKET_ERR_NOT_LISTENING",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 65,
+      "symbol": "Socket.SOCKET_ERR_ACCEPT_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 66,
+      "symbol": "Socket.SOCKET_ERR_SETSOCKOPT_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 67,
+      "symbol": "Socket.SOCKET_ERR_BIND_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 68,
+      "symbol": "Socket.SOCKET_ERR_INVALID_HOSTNAME",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 69,
+      "symbol": "Socket.SOCKET_ERR_INVALID_PORT",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 70,
+      "symbol": "Socket.SOCKET_ERR_GETADDRINFO_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 71,
+      "symbol": "Socket.SOCKET_ERR_CONNECT_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 72,
+      "symbol": "Socket.SOCKET_ERR_MISSING_CONNECTION_DATA",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 73,
+      "symbol": "Socket.SOCKET_ERR_SELECT_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 74,
+      "symbol": "Socket.SOCKET_ERR_LISTEN_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 75,
+      "symbol": "Socket.SOCKET_ERR_INVALID_BUFFER",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 76,
+      "symbol": "Socket.SOCKET_ERR_INVALID_BUFFER_SIZE",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 77,
+      "symbol": "Socket.SOCKET_ERR_RECV_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 78,
+      "symbol": "Socket.SOCKET_ERR_RECV_BUFFER_TOO_SMALL",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 79,
+      "symbol": "Socket.SOCKET_ERR_WRITE_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 80,
+      "symbol": "Socket.SOCKET_ERR_GET_FCNTL_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 81,
+      "symbol": "Socket.SOCKET_ERR_SET_FCNTL_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 82,
+      "symbol": "Socket.SOCKET_ERR_NOT_IMPLEMENTED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 83,
+      "symbol": "Socket.SOCKET_ERR_NOT_SUPPORTED_YET",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 84,
+      "symbol": "Socket.SOCKET_ERR_BAD_SIGNATURE_PARAMETERS",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 85,
+      "symbol": "Socket.SOCKET_ERR_INTERNAL",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 86,
+      "symbol": "Socket.SOCKET_ERR_WRONG_PROTOCOL",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 87,
+      "symbol": "Socket.SOCKET_ERR_NOT_ACTIVE",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 88,
+      "symbol": "Socket.SOCKET_ERR_CONNECTION_RESET",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 89,
+      "symbol": "Socket.SOCKET_ERR_SET_RECV_TIMEOUT_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 90,
+      "symbol": "Socket.SOCKET_ERR_SET_WRITE_TIMEOUT_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 91,
+      "symbol": "Socket.SOCKET_ERR_CONNECT_TIMEOUT",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 92,
+      "symbol": "Socket.SOCKET_ERR_GETSOCKOPT_FAILED",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 93,
+      "symbol": "Socket.SOCKET_ERR_INVALID_DELEGATE_CALL",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 94,
+      "symbol": "Socket.SOCKET_ERR_MISSING_SIGNATURE",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/runner/work/BlueSocket/BlueSocket/Sources/Socket/Socket.swift",
+      "line": 95,
+      "symbol": "Socket.SOCKET_ERR_PARAMETER_ERROR",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/runner/work/BlueSocket/BlueSocket"
+}

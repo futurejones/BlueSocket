@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Signature Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../../js/jquery.min.js" defer></script>
+    <script src="../../js/jazzy.js" defer></script>
+    
+    <script src="../../js/lunr.min.js" defer></script>
+    <script src="../../js/typeahead.jquery.js" defer></script>
+    <script src="../../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Signature" class="dashAnchor"></a>
+    <a title="Signature Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../../index.html">Socket 1.0.200 Docs</a> (71% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../../index.html">Socket Reference</a>
+        <img id="carat" src="../../img/carat.png" />
+        Signature Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Classes/Socket.html">Socket</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Socket/ProtocolFamily.html">– ProtocolFamily</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Socket/SocketType.html">– SocketType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Socket/SocketProtocol.html">– SocketProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Socket/Address.html">– Address</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Socket/Signature.html">– Signature</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Classes/Socket/Error.html">– Error</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Enums/SSLError.html">SSLError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Extensions/fd_set.html">fd_set</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../../Protocols/SSLServiceDelegate.html">SSLServiceDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/SocketReader.html">SocketReader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../../Protocols/SocketWriter.html">SocketWriter</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Signature</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Signature</span> <span class="p">:</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                </div>
+              </div>
+            <p>Socket signature: contains the characteristics of the socket.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/--%20Public%20Properties"></a>
+                <a name="//apple_ref/swift/Section/-- Public Properties" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/--%20Public%20Properties"></a>
+                  <h3 class="section-name"><p>&ndash; Public Properties</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6SocketAAC9SignatureV14protocolFamilyAB08ProtocolD0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/protocolFamily" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SocketAAC9SignatureV14protocolFamilyAB08ProtocolD0Ovp">protocolFamily</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Protocol Family</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">protocolFamily</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Socket/ProtocolFamily.html">ProtocolFamily</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6SocketAAC9SignatureV10socketTypeAB0aD0Ovp"></a>
+                    <a name="//apple_ref/swift/Property/socketType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SocketAAC9SignatureV10socketTypeAB0aD0Ovp">socketType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Socket Type. (Readonly)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">socketType</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Socket/SocketType.html">SocketType</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6SocketAAC9SignatureV5protoAB0A8ProtocolOvp"></a>
+                    <a name="//apple_ref/swift/Property/proto" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SocketAAC9SignatureV5protoAB0A8ProtocolOvp">proto</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Socket Protocol. (Readonly)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">proto</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Socket/SocketProtocol.html">SocketProtocol</a></span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6SocketAAC9SignatureV8hostnameSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/hostname" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SocketAAC9SignatureV8hostnameSSSgvp">hostname</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Host name for connection. (Readonly)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">hostname</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6SocketAAC9SignatureV4ports5Int32Vvp"></a>
+                    <a name="//apple_ref/swift/Property/port" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SocketAAC9SignatureV4ports5Int32Vvp">port</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Port for connection. (Readonly)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">Int32</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6SocketAAC9SignatureV4pathSSSgvp"></a>
+                    <a name="//apple_ref/swift/Property/path" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SocketAAC9SignatureV4pathSSSgvp">path</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Path for .unix type sockets. (Readonly)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6SocketAAC9SignatureV7addressAB7AddressOSgvp"></a>
+                    <a name="//apple_ref/swift/Property/address" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SocketAAC9SignatureV7addressAB7AddressOSgvp">address</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Address info for socket. (Readonly)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Socket/Address.html">Address</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6SocketAAC9SignatureV8isSecureSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isSecure" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SocketAAC9SignatureV8isSecureSbvp">isSecure</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Flag to indicate whether <code><a href="../../Classes/Socket.html">Socket</a></code> is secure or not. (Readonly)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">isSecure</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6SocketAAC9SignatureV7isBoundSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isBound" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SocketAAC9SignatureV7isBoundSbvp">isBound</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code>True</code> is socket bound, <code>false</code> otherwise.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">internal(set)</span> <span class="k">var</span> <span class="nv">isBound</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6SocketAAC9SignatureV11descriptionSSvp"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SocketAAC9SignatureV11descriptionSSvp">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a string description of the error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/--%20Public%20Functions"></a>
+                <a name="//apple_ref/swift/Section/-- Public Functions" class="dashAnchor"></a>
+                <div class="section-name-container">
+                  <a class="section-name-link" href="#/--%20Public%20Functions"></a>
+                  <h3 class="section-name"><p>&ndash; Public Functions</p>
+</h3>
+                </div>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6SocketAAC9SignatureV14protocolFamily10socketType5proto7addressADSgs5Int32V_A2kB7AddressOSgtKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(protocolFamily:socketType:proto:address:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SocketAAC9SignatureV14protocolFamily10socketType5proto7addressADSgs5Int32V_A2kB7AddressOSgtKcfc">init(protocolFamily:<wbr>socketType:<wbr>proto:<wbr>address:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a socket signature</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">protocolFamily</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="nv">socketType</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="nv">proto</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">,</span> <span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Socket/Address.html">Address</a></span><span class="p">?)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>protocolFamily</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The family of the socket to create.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>socketType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of socket to create.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>proto</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The protocool to use for the socket.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>address</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Address info for the socket.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New Signature instance</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6SocketAAC9SignatureV10socketType5proto7address8hostname4portADSgAB0aD0O_AB0A8ProtocolOAB7AddressOSSSgs5Int32VSgtKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(socketType:proto:address:hostname:port:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SocketAAC9SignatureV10socketType5proto7address8hostname4portADSgAB0aD0O_AB0A8ProtocolOAB7AddressOSSSgs5Int32VSgtKcfc">init(socketType:<wbr>proto:<wbr>address:<wbr>hostname:<wbr>port:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a socket signature</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">socketType</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Socket/SocketType.html">SocketType</a></span><span class="p">,</span> <span class="nv">proto</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Socket/SocketProtocol.html">SocketProtocol</a></span><span class="p">,</span> <span class="nv">address</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Socket/Address.html">Address</a></span><span class="p">,</span> <span class="nv">hostname</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">?)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>socketType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of socket to create.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>proto</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The protocool to use for the socket.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>address</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Address info for the socket.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hostname</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Hostname for this signature.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>port</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Port for this signature.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New Signature instance</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6SocketAAC9SignatureV14protocolFamily10socketType5proto8hostname4portADSgAB08ProtocolD0O_AB0aF0OAB0aJ0OSSSgs5Int32VSgtKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(protocolFamily:socketType:proto:hostname:port:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SocketAAC9SignatureV14protocolFamily10socketType5proto8hostname4portADSgAB08ProtocolD0O_AB0aF0OAB0aJ0OSSSgs5Int32VSgtKcfc">init(protocolFamily:<wbr>socketType:<wbr>proto:<wbr>hostname:<wbr>port:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a socket signature</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">protocolFamily</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Socket/ProtocolFamily.html">ProtocolFamily</a></span><span class="p">,</span> <span class="nv">socketType</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Socket/SocketType.html">SocketType</a></span><span class="p">,</span> <span class="nv">proto</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Socket/SocketProtocol.html">SocketProtocol</a></span><span class="p">,</span> <span class="nv">hostname</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">?)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>protocolFamily</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The protocol family to use (only <code>.inet</code> and <code>.inet6</code> supported by this <code>init</code> function).</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>socketType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of socket to create.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>proto</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The protocool to use for the socket.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>hostname</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Hostname for this signature.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>port</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Port for this signature.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New Signature instance</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:6SocketAAC9SignatureV10socketType5proto4pathADSgAB0aD0O_AB0A8ProtocolOSSSgtKcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(socketType:proto:path:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:6SocketAAC9SignatureV10socketType5proto4pathADSgAB0aD0O_AB0A8ProtocolOSSSgtKcfc">init(socketType:<wbr>proto:<wbr>path:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create a socket signature</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">socketType</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Socket/SocketType.html">SocketType</a></span><span class="p">,</span> <span class="nv">proto</span><span class="p">:</span> <span class="kt"><a href="../../Classes/Socket/SocketProtocol.html">SocketProtocol</a></span><span class="p">,</span> <span class="nv">path</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>socketType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The type of socket to create.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>proto</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The protocool to use for the socket.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>path</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Pathname for this signature.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>New Signature instance</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://github.com/Kitura/BlueSocket" target="_blank" rel="external">IBM and the Kitura project authors</a>. All rights reserved. (Last updated: 2020-11-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

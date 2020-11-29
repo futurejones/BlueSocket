@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Socket  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+    <script src="js/lunr.min.js" defer></script>
+    <script src="js/typeahead.jquery.js" defer></script>
+    <script src="js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a title="Socket  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">Socket 1.0.200 Docs</a> (71% documented)</p>
+        <p class="header-right">
+          <form role="search" action="search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">Socket Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Socket  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/Socket.html">Socket</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Socket/ProtocolFamily.html">– ProtocolFamily</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Socket/SocketType.html">– SocketType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Socket/SocketProtocol.html">– SocketProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Socket/Address.html">– Address</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Socket/Signature.html">– Signature</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/Socket/Error.html">– Error</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/SSLError.html">SSLError</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Extensions/fd_set.html">fd_set</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/SSLServiceDelegate.html">SSLServiceDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SocketReader.html">SocketReader</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SocketWriter.html">SocketWriter</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p align="center">
+    <a href="https://www.kitura.io/packages.html#all">
+    <img src="https://img.shields.io/badge/docs-kitura.io-1FBCE4.svg" alt="APIDoc">
+    </a>
+    <a href="https://travis-ci.org/Kitura/BlueSocket">
+    <img src="https://travis-ci.org/Kitura/BlueSocket.svg?branch=master" alt="Build Status - Master">
+    </a>
+    <img src="https://img.shields.io/badge/os-macOS-green.svg?style=flat" alt="macOS">
+    <img src="https://img.shields.io/badge/os-iOS-green.svg?style=flat" alt="iOS">
+    <img src="https://img.shields.io/badge/os-linux-green.svg?style=flat" alt="Linux">
+    <img src="https://img.shields.io/badge/license-Apache2-blue.svg?style=flat" alt="Apache 2">
+    <a href="http://swift-at-ibm-slack.mybluemix.net/">
+    <img src="http://swift-at-ibm-slack.mybluemix.net/badge.svg" alt="Slack Status">
+    </a>
+</p>
+<h1 id='bluesocket' class='heading'>BlueSocket</h1>
+
+<p>Socket framework for Swift using the Swift Package Manager. Works on iOS, macOS, and Linux.</p>
+<h2 id='prerequisites' class='heading'>Prerequisites</h2>
+<h3 id='swift' class='heading'>Swift</h3>
+
+<ul>
+<li>Swift Open Source <code>swift-4.0.0-RELEASE</code> toolchain (<strong>Minimum REQUIRED for latest release</strong>)</li>
+<li>Swift Open Source <code>swift-4.2-RELEASE</code> toolchain (<strong>Recommended</strong>)</li>
+<li>Swift toolchain included in <em>Xcode Version 10.0 (10A255) or higher</em>.</li>
+</ul>
+<h3 id='macos' class='heading'>macOS</h3>
+
+<ul>
+<li>macOS 10.11.6 (<em>El Capitan</em>) or higher.</li>
+<li>Xcode Version 9.0  (9A325) or higher using one of the above toolchains.</li>
+<li>Xcode Version 10.0 (10A255) or higher using the included toolchain (<em>Recommended</em>).</li>
+</ul>
+<h3 id='ios' class='heading'>iOS</h3>
+
+<ul>
+<li>iOS 10.0 or higher</li>
+<li>Xcode Version 9.0  (9A325) or higher using one of the above toolchains.</li>
+<li>Xcode Version 10.0 (10A255) or higher using the included toolchain (<em>Recommended</em>).</li>
+</ul>
+<h3 id='linux' class='heading'>Linux</h3>
+
+<ul>
+<li>Ubuntu 16.04 (or 16.10 but only tested on 16.04).</li>
+<li>One of the Swift Open Source toolchain listed above.</li>
+</ul>
+<h3 id='other-platforms' class='heading'>Other Platforms</h3>
+
+<ul>
+<li><strong>BlueSocket</strong> is <strong>NOT</strong> supported on <em>watchOS</em> since POSIX/BSD/Darwin sockets are not supported on the actual device although they are supported in the simulator.</li>
+<li><strong>BlueSocket</strong> should work on <em>tvOS</em> but has <strong>NOT</strong> been tested.</li>
+</ul>
+<h3 id='add-ins' class='heading'>Add-ins</h3>
+
+<ul>
+<li><a href="https://github.com/Kitura/BlueSSLService.git">BlueSSLService</a> can be used to add <strong>SSL/TLS</strong> support.
+
+<ul>
+<li>If using this package, please note that the  <strong>libssl-dev</strong> package is required to be installed when building on Linux.</li>
+</ul></li>
+</ul>
+<h2 id='build' class='heading'>Build</h2>
+
+<p>To build Socket from the command line:</p>
+<pre class="highlight plaintext"><code>% cd &lt;path-to-clone&gt;
+% swift build
+</code></pre>
+<h2 id='testing' class='heading'>Testing</h2>
+
+<p>To run the supplied unit tests for <strong>Socket</strong> from the command line:</p>
+<pre class="highlight plaintext"><code>% cd &lt;path-to-clone&gt;
+% swift build
+% swift test
+
+</code></pre>
+<h2 id='using-bluesocket' class='heading'>Using BlueSocket</h2>
+<h3 id='including-in-your-project' class='heading'>Including in your project</h3>
+<h4 id='swift-package-manager' class='heading'>Swift Package Manager</h4>
+
+<p>To include BlueSocket into a Swift Package Manager package, add it to the <code>dependencies</code> attribute defined in your <code>Package.swift</code> file. You can select the version using the <code>majorVersion</code> and <code>minor</code> parameters. For example:</p>
+<pre class="highlight plaintext"><code>    dependencies: [
+        .Package(url: "https://github.com/Kitura/BlueSocket.git", majorVersion: &lt;majorVersion&gt;, minor: &lt;minor&gt;)
+    ]
+</code></pre>
+<h4 id='carthage' class='heading'>Carthage</h4>
+
+<p>To include BlueSocket in a project using Carthage, add a line to your <code>Cartfile</code> with the GitHub organization and project names and version. For example:</p>
+<pre class="highlight plaintext"><code>    github "Kitura/BlueSocket" ~&gt; &lt;majorVersion&gt;.&lt;minor&gt;
+</code></pre>
+<h4 id='cocoapods' class='heading'>CocoaPods</h4>
+
+<p>To include BlueSocket in a project using CocoaPods, you just add <code>BlueSocket</code> to your <code>Podfile</code>, for example:</p>
+<pre class="highlight plaintext"><code>    platform :ios, '10.0'
+
+    target 'MyApp' do
+        use_frameworks!
+        pod 'BlueSocket'
+    end
+</code></pre>
+<h3 id='before-starting' class='heading'>Before starting</h3>
+
+<p>The first thing you need to do is import the Socket framework.  This is done by the following:</p>
+<pre class="highlight plaintext"><code>import Socket
+</code></pre>
+<h3 id='family-type-and-protocol-support' class='heading'>Family, Type and Protocol Support</h3>
+
+<p><strong>BlueSocket</strong> supports the following families, types and protocols:</p>
+
+<ul>
+<li><em>Families:</em>
+
+<ul>
+<li>IPV4: <code><a href="Classes/Socket/ProtocolFamily.html#/s:6SocketAAC14ProtocolFamilyO4inetyA2DmF">Socket.ProtocolFamily.inet</a></code></li>
+<li>IPV6: <code><a href="Classes/Socket/ProtocolFamily.html#/s:6SocketAAC14ProtocolFamilyO5inet6yA2DmF">Socket.ProtocolFamily.inet6</a></code></li>
+<li>UNIX: <code><a href="Classes/Socket/ProtocolFamily.html#/s:6SocketAAC14ProtocolFamilyO4unixyA2DmF">Socket.ProtocolFamily.unix</a></code></li>
+</ul></li>
+<li><em>Types:</em>
+
+<ul>
+<li>Stream: <code><a href="Classes/Socket/SocketType.html#/s:6SocketAAC0A4TypeO6streamyA2DmF">Socket.SocketType.stream</a></code></li>
+<li>Datagram: <code><a href="Classes/Socket/SocketType.html#/s:6SocketAAC0A4TypeO8datagramyA2DmF">Socket.SocketType.datagram</a></code></li>
+</ul></li>
+<li><em>Protocols:</em>
+
+<ul>
+<li>TCP: <code><a href="Classes/Socket/SocketProtocol.html#/s:6SocketAAC0A8ProtocolO3tcpyA2DmF">Socket.SocketProtocol.tcp</a></code></li>
+<li>UDP: <code><a href="Classes/Socket/SocketProtocol.html#/s:6SocketAAC0A8ProtocolO3udpyA2DmF">Socket.SocketProtocol.udp</a></code></li>
+<li>UNIX: <code><a href="Classes/Socket/SocketProtocol.html#/s:6SocketAAC0A8ProtocolO4unixyA2DmF">Socket.SocketProtocol.unix</a></code></li>
+</ul></li>
+</ul>
+<h3 id='creating-a-socket' class='heading'>Creating a socket.</h3>
+
+<p><strong>BlueSocket</strong> provides four different factory methods that are used to create an instance.  These are:</p>
+
+<ul>
+<li><code>create()</code> - This creates a fully configured default socket. A default socket is created with <code>family: .inet</code>, <code>type: .stream</code>, and <code>proto: .tcp</code>.</li>
+<li><code>create(family family: ProtocolFamily, type: SocketType, proto: SocketProtocol)</code> - This API allows you to create a configured <code><a href="Classes/Socket.html">Socket</a></code> instance customized for your needs.  You can customize the protocol family, socket type and socket protocol.</li>
+<li><code>create(connectedUsing signature: Signature)</code> - This API will allow you create a <code><a href="Classes/Socket.html">Socket</a></code> instance and have it attempt to connect to a server based on the information you pass in the <code><a href="Classes/Socket/Signature.html">Socket.Signature</a></code>.</li>
+<li><code>create(fromNativeHandle nativeHandle: Int32, address: Address?)</code> - This API lets you wrap a native file descriptor describing an existing socket in a new instance of <code><a href="Classes/Socket.html">Socket</a></code>.</li>
+</ul>
+<h4 id='setting-the-read-buffer-size' class='heading'>Setting the read buffer size.</h4>
+
+<p><strong>BlueSocket</strong> allows you to set the size of the read buffer that it will use. Then, depending on the needs of the application, you can change it to a higher or lower value. The default is set to <code><a href="Classes/Socket.html#/s:6SocketAAC31SOCKET_DEFAULT_READ_BUFFER_SIZESivpZ">Socket.SOCKET_DEFAULT_READ_BUFFER_SIZE</a></code> which has a value of <code>4096</code>. The minimum read buffer size is <code><a href="Classes/Socket.html#/s:6SocketAAC31SOCKET_MINIMUM_READ_BUFFER_SIZESivpZ">Socket.SOCKET_MINIMUM_READ_BUFFER_SIZE</a></code> which is set to <code>1024</code>. Below illustrates how to change the read buffer size (exception handling omitted for brevity):</p>
+<pre class="highlight plaintext"><code>let mySocket = try Socket.create()
+mySocket.readBufferSize = 32768
+</code></pre>
+
+<p>The example above sets the default read buffer size to <em>32768</em>.  This setting should be done <em>prior</em> to using the <code><a href="Classes/Socket.html">Socket</a></code> instance for the first time.</p>
+<h3 id='closing-a-socket' class='heading'>Closing a socket.</h3>
+
+<p>To close the socket of an open instance, the following function is provided:</p>
+
+<ul>
+<li><code>close()</code> - This function will perform the necessary tasks in order to cleanly close an open socket.</li>
+</ul>
+<h3 id='listen-on-a-socket-tcp-unix' class='heading'>Listen on a socket (TCP/UNIX).</h3>
+
+<p>To use <strong>BlueSocket</strong> to listen for a connection on a socket the following API is provided:</p>
+
+<ul>
+<li><code>listen(on port: Int, maxBacklogSize: Int = Socket.SOCKET_DEFAULT_MAX_BACKLOG, allowPortReuse: Bool = true, node: String? = nil)</code>
+The first parameter <code>port</code>, is the port to be used to listen on. The second parameter, <code>maxBacklogSize</code> allows you to set the size of the queue holding pending connections. The function will determine the appropriate socket configuration based on the <code>port</code> specified.  For convenience on macOS, the constant <code><a href="Classes/Socket.html#/s:6SocketAAC25SOCKET_MAX_DARWIN_BACKLOGSivpZ">Socket.SOCKET_MAX_DARWIN_BACKLOG</a></code> can be set to use the maximum allowed backlog size.  The default value for all platforms is <code><a href="Classes/Socket.html#/s:6SocketAAC26SOCKET_DEFAULT_MAX_BACKLOGSivpZ">Socket.SOCKET_DEFAULT_MAX_BACKLOG</a></code>, currently set to <em>50</em>. For server use, it may be necessary to increase this value.  To allow the reuse of the listening port, set <code>allowPortReuse</code> to <code>true</code>.  If set to <code>false</code>, a error will occur if you attempt to listen on a port already in use.  The <code>DEFAULT</code> behavior is to <code>allow</code> port reuse.  The last parameter, <code>node</code>, can be used to listen on a <em>specific address</em>.  The value passed is an <em>optional String</em> containing the numerical network address (for IPv4, numbers and dots notation, for iPv6, hexidecimal strting).  The <code>DEFAULT</code> behavior is to search for an appropriate interface.  If <code>node</code> is improperly formatted a <strong>SOCKET_ERR_GETADDRINFO_FAILED</strong> error will be returned.  If <code>node</code> is properly formatted but the address specified is not available, a <strong>SOCKET_ERR_BIND_FAILED</strong> will be returned.</li>
+<li><code>listen(on path: String, maxBacklogSize: Int = Socket.SOCKET_DEFAULT_MAX_BACKLOG)</code>
+This API can only be used with the <code>.unix</code> protocol family. The first parameter <code>path</code>, is the path to be used to listen on. The second parameter, <code>maxBacklogSize</code> allows you to set the size of the queue holding pending connections. The function will determine the appropriate socket configuration based on the <code>port</code> specified.  For convenience on macOS, the constant <code><a href="Classes/Socket.html#/s:6SocketAAC25SOCKET_MAX_DARWIN_BACKLOGSivpZ">Socket.SOCKET_MAX_DARWIN_BACKLOG</a></code> can be set to use the maximum allowed backlog size.  The default value for all platforms is <code><a href="Classes/Socket.html#/s:6SocketAAC26SOCKET_DEFAULT_MAX_BACKLOGSivpZ">Socket.SOCKET_DEFAULT_MAX_BACKLOG</a></code>, currently set to <em>50</em>. For server use, it may be necessary to increase this value.</li>
+</ul>
+<h4 id='example' class='heading'>Example:</h4>
+
+<p>The following example creates a default <code><a href="Classes/Socket.html">Socket</a></code> instance and then <em>immediately</em> starts listening on port <code>1337</code>.  <em>Note: Exception handling omitted for brevity, see the complete example below for an example of exception handling.</em></p>
+<pre class="highlight swift"><code><span class="k">var</span> <span class="nv">socket</span> <span class="o">=</span> <span class="k">try</span> <span class="kt">Socket</span><span class="o">.</span><span class="nf">create</span><span class="p">()</span>
+<span class="k">try</span> <span class="n">socket</span><span class="o">.</span><span class="nf">listen</span><span class="p">(</span><span class="nv">on</span><span class="p">:</span> <span class="mi">1337</span><span class="p">)</span>
+</code></pre>
+<h3 id='accepting-a-connection-from-a-listening-socket-tcp-unix' class='heading'>Accepting a connection from a listening socket (TCP/UNIX).</h3>
+
+<p>When a listening socket detects an incoming connection request, control is returned to your program.  You can then either accept the connection or continue listening or both if your application is multi-threaded. <strong>BlueSocket</strong> supports two distinct ways of accepting an incoming connection. They are:</p>
+
+<ul>
+<li><code>acceptClientConnection(invokeDelegate: Bool = true)</code> - This function accepts the connection and returns a <em>new</em> <code><a href="Classes/Socket.html">Socket</a></code> instance based on the newly connected socket. The instance that was listening in unaffected.  If <code>invokeDelegate</code> is <code>false</code> and the <code><a href="Classes/Socket.html">Socket</a></code> has an <code>SSLService</code> delegate attached, you <strong>MUST</strong> call the <code>invokeDelegateOnAccept</code> method using the <code><a href="Classes/Socket.html">Socket</a></code> instance that is returned by this function.</li>
+<li><code>invokeDelegateOnAccept(for newSocket: Socket)</code> - If the <code><a href="Classes/Socket.html">Socket</a></code> instance has a <code>SSLService</code> delegate, this will invoke the delegates accept function to perform SSL negotiation.  It should be called with the <code><a href="Classes/Socket.html">Socket</a></code> instance returned by <code>acceptClientConnection</code>.  This function will throw an exception if called with the wrong <code><a href="Classes/Socket.html">Socket</a></code> instance, called multiple times, or if the <code><a href="Classes/Socket.html">Socket</a></code> instance does <strong>NOT</strong> have a <code>SSLService</code> delegate.</li>
+<li><code>acceptConnection()</code> - This function accepts the incoming connection, <em>replacing and closing</em> the existing listening socket. The properties that were formerly associated with the listening socket are replaced by the properties that are relevant to the newly connected socket.</li>
+</ul>
+<h3 id='connecting-a-socket-to-a-server-tcp-unix' class='heading'>Connecting a socket to a server (TCP/UNIX).</h3>
+
+<p>In addition to the <code>create(connectedUsing:)</code> factory method described above, <strong>BlueSocket</strong> supports three additional instance functions for connecting a <code><a href="Classes/Socket.html">Socket</a></code> instance to a server. They are:</p>
+
+<ul>
+<li><code>connect(to host: String, port: Int32, timeout: UInt = 0)</code> - This API allows you to connect to a server based on the <code>hostname</code> and <code>port</code> you provide. Note: an <code>exception</code> will be thrown by this function if the value of <code>port</code> is not in the range <code>1-65535</code>.  Optionally, you can set <code>timeout</code> to the number of milliseconds to wait for the connect. Note: If the socket is in blocking mode it will be changed to non-blocking mode <em>temporarily</em> if a <code>timeout</code> greater than zero (0) is provided. The returned socket will be <em>set back to its original setting (blocking or non-blocking)</em>.  If the socket is set to <em>non-blocking</em> and <strong>no timeout value is provided</strong>, an exception will be thrown.  Alternatively, you can set the socket to <em>non-blocking</em> after successfully connecting.</li>
+<li><code>connect(to path: String)</code> - This API can only be used with the <code>.unix</code> protocol family. It allows you to connect to a server based on the <code>path</code> you provide.</li>
+<li><code>connect(using signature: Signature)</code> - This API allows you specify the connection information by providing a <code><a href="Classes/Socket/Signature.html">Socket.Signature</a></code> instance containing the information.  Refer to <code><a href="Classes/Socket/Signature.html">Socket.Signature</a></code> in <em>Socket.swift</em> for more information.</li>
+</ul>
+<h3 id='reading-data-from-a-socket-tcp-unix' class='heading'>Reading data from a socket (TCP/UNIX).</h3>
+
+<p><strong>BlueSocket</strong> supports four different ways to read data from a socket. These are (in recommended use order):</p>
+
+<ul>
+<li><code>read(into data: inout Data)</code> - This function reads all the data available on a socket and returns it in the <code>Data</code> object that was passed.</li>
+<li><code>read(into data: NSMutableData)</code> - This function reads all the data available on a socket and returns it in the <code>NSMutableData</code> object that was passed.</li>
+<li><code>readString()</code> - This function reads all the data available on a socket and returns it as an <code>String</code>. A <code>nil</code> is returned if no data is available for reading.</li>
+<li><code>read(into buffer: UnsafeMutablePointer&lt;CChar&gt;, bufSize: Int, truncate: Bool = false)</code> - This function allows you to read data into a buffer of a specified size by providing an <em>unsafe</em> pointer to that buffer and an integer the denotes the size of that buffer.  This API (in addition to other types of exceptions) will throw a <code><a href="Classes/Socket.html#/s:6SocketAAC32SOCKET_ERR_RECV_BUFFER_TOO_SMALLSivpZ">Socket.SOCKET_ERR_RECV_BUFFER_TOO_SMALL</a></code> if the buffer provided is too small, unless <code>truncate = true</code> in which case the socket will act as if only <code>bufSize</code> bytes were read (unretrieved bytes will be returned in the next call). If <code>truncate = false</code>, you will need to call again with proper buffer size (see <code>Error.bufferSizeNeeded</code>in <em>Socket.swift</em> for more information).</li>
+<li><strong>Note:</strong> All of the read APIs above except <code>readString()</code> can return zero (0). This can indicate that the remote connection was closed or it could indicate that the socket would block (assuming you&rsquo;ve turned off blocking).  To differentiate between the two, the property <code>remoteConnectionClosed</code> can be checked. If <code>true</code>, the socket remote partner has closed the connection and this <code><a href="Classes/Socket.html">Socket</a></code> instance should be closed.</li>
+</ul>
+<h3 id='writing-data-to-a-socket-tcp-unix' class='heading'>Writing data to a Socket (TCP/UNIX).</h3>
+
+<p>In addition to reading from a socket, <strong>BlueSocket</strong> also supplies four methods for writing data to a socket. These are (in recommended use order):</p>
+
+<ul>
+<li><code>write(from data: Data)</code> - This function writes the data contained within the <code>Data</code> object to the socket.</li>
+<li><code>write(from data: NSData)</code> - This function writes the data contained within the <code>NSData</code> object to the socket.</li>
+<li><code>write(from string: String)</code> - This function writes the data contained in the <code>String</code> provided to the socket.</li>
+<li><code>write(from buffer: UnsafeRawPointer, bufSize: Int)</code> - This function writes the data contained within the buffer of the specified size by providing an <em>unsafe</em> pointer to that buffer and an integer that denotes the size of that buffer.</li>
+</ul>
+<h3 id='listening-for-a-datagram-message-udp' class='heading'>Listening for a datagram message (UDP).</h3>
+
+<p><strong>BlueSocket</strong> supports three different ways to listen for incoming datagrams. These are (in recommended use order):</p>
+
+<ul>
+<li><code>listen(forMessage data: inout Data, on port: Int, maxBacklogSize: Int = Socket.SOCKET_DEFAULT_MAX_BACKLOG)</code> - This function listens for an incoming datagram, reads it and returns it in the passed <code>Data</code> object.  It returns a tuple containing the number of bytes read and the <code>Address</code> of where the data originated.</li>
+<li><code>listen(forMessage data: NSMutableData, on port: Int, maxBacklogSize: Int = Socket.SOCKET_DEFAULT_MAX_BACKLOG)</code> - This function listens for an incoming datagram, reads it and returns it in the passed <code>NSMutableData</code> object.  It returns a tuple containing the number of bytes read and the <code>Address</code> of where the data originated.</li>
+<li><code>listen(forMessage buffer: UnsafeMutablePointer&lt;CChar&gt;, bufSize: Int, on port: Int, maxBacklogSize: Int = Socket.SOCKET_DEFAULT_MAX_BACKLOG)</code> - This function listens for an incoming datagram, reads it and returns it in the passed <code>Data</code> object.  It returns a tuple containing the number of bytes read and the <code>Address</code> of where the data originated.</li>
+<li><strong>Note 1:</strong> These functions will determine the appropriate socket configuration based on the <code>port</code> specified. Setting the value of <code>port</code> to zero (0) will cause the function to determine a suitable free port.</li>
+<li><strong>Note 2:</strong> The parameter, <code>maxBacklogSize</code> allows you to set the size of the queue holding pending connections. The function will determine the appropriate socket configuration based on the <code>port</code> specified.  For convenience on macOS, the constant <code><a href="Classes/Socket.html#/s:6SocketAAC25SOCKET_MAX_DARWIN_BACKLOGSivpZ">Socket.SOCKET_MAX_DARWIN_BACKLOG</a></code> can be set to use the maximum allowed backlog size.  The default value for all platforms is <code><a href="Classes/Socket.html#/s:6SocketAAC26SOCKET_DEFAULT_MAX_BACKLOGSivpZ">Socket.SOCKET_DEFAULT_MAX_BACKLOG</a></code>, currently set to <em>50</em>. For server use, it may be necessary to increase this value.</li>
+</ul>
+<h3 id='reading-a-datagram-udp' class='heading'>Reading a datagram (UDP).</h3>
+
+<p><strong>BlueSocket</strong> supports three different ways to read incoming datagrams. These are (in recommended use order):</p>
+
+<ul>
+<li><code>readDatagram(into data: inout Data)</code> - This function reads an incoming datagram and returns it in the passed <code>Data</code> object.  It returns a tuple containing the number of bytes read and the <code>Address</code> of where the data originated.</li>
+<li><code>readDatagram(into data: NSMutableData)</code> - This function reads an incoming datagram and returns it in the passed <code>NSMutableData</code> object.  It returns a tuple containing the number of bytes read and the <code>Address</code> of where the data originated.</li>
+<li><code>readDatagram(into buffer: UnsafeMutablePointer&lt;CChar&gt;, bufSize: Int)</code> - This function reads an incoming datagram and returns it in the passed <code>Data</code> object.  It returns a tuple containing the number of bytes read and the <code>Address</code> of where the data originated. If the amount of data read is more than <code>bufSize</code> only <code>bufSize</code> will be returned.  The remainder of the data read will be discarded.</li>
+</ul>
+<h3 id='writing-a-datagram-udp' class='heading'>Writing a datagram (UDP).</h3>
+
+<p><strong>BlueSocket</strong> also supplies four methods for writing datagrams to a socket. These are (in recommended use order):</p>
+
+<ul>
+<li><code>write(from data: Data, to address: Address)</code> - This function writes the datagram contained within the <code>Data</code> object to the socket.</li>
+<li><code>write(from data: NSData, to address: Address)</code> - This function writes the datagram contained within the <code>NSData</code> object to the socket.</li>
+<li><code>write(from string: String, to address: Address)</code> - This function writes the datagram contained in the <code>String</code> provided to the socket.</li>
+<li><code>write(from buffer: UnsafeRawPointer, bufSize: Int, to address: Address)</code> - This function writes the data contained within the buffer of the specified size by providing an <em>unsafe</em> pointer to that buffer and an integer that denotes the size of that buffer.</li>
+<li><strong>Note:</strong> In all four of the APIs above, the <code>address</code> parameter represents the address for the destination you are sending the datagram to.</li>
+</ul>
+<h3 id='important-note-about-nsdata-and-nsmutabledata' class='heading'>IMPORTANT NOTE about NSData and NSMutableData</h3>
+
+<p>The read and write APIs above that use either <code>NSData</code> or <code>NSMutableData</code> will <em>probably</em> be <strong>deprecated</strong> in the not so distant future.</p>
+<h3 id='miscellaneous-utility-functions' class='heading'>Miscellaneous Utility Functions</h3>
+
+<ul>
+<li><code>hostnameAndPort(from address: Address)</code> - This <em>class function</em> provides a means to extract the hostname and port from a given <code><a href="Classes/Socket/Address.html">Socket.Address</a></code>. On successful completion, a tuple containing the <code>hostname</code> and <code>port</code> are returned.</li>
+<li><code>checkStatus(for sockets: [Socket])</code> - This <em>class function</em> allows you to check status of an array of <code><a href="Classes/Socket.html">Socket</a></code> instances. Upon completion, a tuple containing two <code><a href="Classes/Socket.html">Socket</a></code> arrays is returned. The first array contains the <code><a href="Classes/Socket.html">Socket</a></code> instances are that have data available to be read and the second array contains <code><a href="Classes/Socket.html">Socket</a></code> instances that can be written to. This API does <em>not</em> block. It will check the status of each <code><a href="Classes/Socket.html">Socket</a></code> instance and then return the results.</li>
+<li><code>wait(for sockets: [Socket], timeout: UInt, waitForever: Bool = false)</code> - This <em>class function</em> allows for monitoring an array of <code><a href="Classes/Socket.html">Socket</a></code> instances, waiting for either a timeout to occur or data to be readable at one of the monitored <code><a href="Classes/Socket.html">Socket</a></code> instances. If a timeout of zero (0) is specified, this API will check each socket and return immediately. Otherwise, it will wait until either the timeout expires or data is readable from one or more of the monitored <code><a href="Classes/Socket.html">Socket</a></code> instances. If a timeout occurs, this API will return <code>nil</code>.  If data is available on one or more of the monitored <code><a href="Classes/Socket.html">Socket</a></code> instances, those instances will be returned in an array. If the <code>waitForever</code> flag is set to true, the function will wait indefinitely for data to become available <em>regardless of the timeout value specified</em>.</li>
+<li><code>createAddress(host: String, port: Int32)</code> - This <em>class</em> function allows for the creation of <code>Address</code> enum given a <code>host</code> and <code>port</code>. On success, this function returns an <code>Address</code> or <code>nil</code> if the <code>host</code> specified doesn&rsquo;t exist.</li>
+<li><code>isReadableOrWritable(waitForever: Bool = false, timeout: UInt = 0)</code> - This <em>instance function</em> allows to determine whether a <code><a href="Classes/Socket.html">Socket</a></code> instance is readable and/or writable.  A tuple is returned containing two <code>Bool</code> values.  The first, if true, indicates the <code><a href="Classes/Socket.html">Socket</a></code> instance has data to read, the second, if true, indicates that the <code><a href="Classes/Socket.html">Socket</a></code> instance can be written to. <code>waitForever</code> if true, causes this routine to wait until the <code><a href="Classes/Socket.html">Socket</a></code> is either readable or writable or an error occurs.  If false, the <code>timeout</code> parameter specifies how long to wait.  If a value of zero <code>(0)</code> is specified for the timeout value, this function will check the <em>current</em> status and <em>immediately</em> return. This function returns a tuple containing two booleans, the first <code>readable</code> and the second, <code>writable</code>.  They are set to true if the <code><a href="Classes/Socket.html">Socket</a></code> is either readable or writable repsectively.  If neither is set to true, a timeout has occurred. <strong>Note:</strong> If you&rsquo;re attempting to write to a newly connected <em>Socket</em>, you should ensure that it&rsquo;s <em>writable</em> before attempting the operation.</li>
+<li><code>setBlocking(shouldBlock: Bool)</code> - This <em>instance function</em> allows you control whether or not this <code><a href="Classes/Socket.html">Socket</a></code> instance should be placed in blocking mode or not. <strong>Note:</strong> All <code><a href="Classes/Socket.html">Socket</a></code> instances are, by <em>default</em>, created in <em>blocking mode</em>.</li>
+<li><code>setReadTimeout(value: UInt = 0)</code> - This <em>instance function</em> allows you to set a timeout for read operations. <code>value</code> is a <code>UInt</code> the specifies the time for the read operation to wait before returning.  In the event of a timeout, the read operation will return <code>0</code> bytes read and <code>errno</code> will be set to <code>EAGAIN</code>.</li>
+<li><code>setWriteTimeout(value: UInt = 0)</code> - This <em>instance function</em> allows you to set a timeout for write operations. <code>value</code> is a <code>UInt</code> the specifies the time for the write operation to wait before returning.  In the event of a timeout, the write operation will return <code>0</code> bytes written and <code>errno</code> will be set to <code>EAGAIN</code> for <em>TCP</em> and <em>UNIX</em> sockets, for <em>UDP</em>, the write operation will <em>succeed</em> regardless of the timeout value.</li>
+<li><code>udpBroadcast(enable: Bool)</code> - This <em>instance function</em> is used to enable broadcast mode on a UDP socket.  Pass <code>true</code> to enable broadcast, <code>false</code> to disable.  This function will throw an exception if the <code><a href="Classes/Socket.html">Socket</a></code> instance is not a UDP socket.</li>
+</ul>
+<h3 id='complete-example' class='heading'>Complete Example</h3>
+
+<p>The following example shows how to create a relatively simple multi-threaded echo server using the new <code>GCD based</code> <strong>Dispatch</strong> API. What follows is code for a simple echo server that once running, can be accessed via <code>telnet ::1 1337</code>.</p>
+<pre class="highlight swift"><code>
+<span class="kd">import</span> <span class="kt">Foundation</span>
+<span class="kd">import</span> <span class="kt">Socket</span>
+<span class="kd">import</span> <span class="kt">Dispatch</span>
+
+<span class="kd">class</span> <span class="kt">EchoServer</span> <span class="p">{</span>
+
+    <span class="kd">static</span> <span class="k">let</span> <span class="nv">quitCommand</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"QUIT"</span>
+    <span class="kd">static</span> <span class="k">let</span> <span class="nv">shutdownCommand</span><span class="p">:</span> <span class="kt">String</span> <span class="o">=</span> <span class="s">"SHUTDOWN"</span>
+    <span class="kd">static</span> <span class="k">let</span> <span class="nv">bufferSize</span> <span class="o">=</span> <span class="mi">4096</span>
+
+    <span class="k">let</span> <span class="nv">port</span><span class="p">:</span> <span class="kt">Int</span>
+    <span class="k">var</span> <span class="nv">listenSocket</span><span class="p">:</span> <span class="kt">Socket</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span>
+    <span class="k">var</span> <span class="nv">continueRunningValue</span> <span class="o">=</span> <span class="kc">true</span>
+    <span class="k">var</span> <span class="nv">connectedSockets</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int32</span><span class="p">:</span> <span class="kt">Socket</span><span class="p">]()</span>
+    <span class="k">let</span> <span class="nv">socketLockQueue</span> <span class="o">=</span> <span class="kt">DispatchQueue</span><span class="p">(</span><span class="nv">label</span><span class="p">:</span> <span class="s">"com.kitura.serverSwift.socketLockQueue"</span><span class="p">)</span>
+    <span class="k">var</span> <span class="nv">continueRunning</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span>
+        <span class="nf">set</span><span class="p">(</span><span class="n">newValue</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">socketLockQueue</span><span class="o">.</span><span class="n">sync</span> <span class="p">{</span>
+                <span class="k">self</span><span class="o">.</span><span class="n">continueRunningValue</span> <span class="o">=</span> <span class="n">newValue</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="k">get</span> <span class="p">{</span>
+            <span class="k">return</span> <span class="n">socketLockQueue</span><span class="o">.</span><span class="n">sync</span> <span class="p">{</span>
+                <span class="k">self</span><span class="o">.</span><span class="n">continueRunningValue</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="nf">init</span><span class="p">(</span><span class="nv">port</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">port</span> <span class="o">=</span> <span class="n">port</span>
+    <span class="p">}</span>
+
+    <span class="kd">deinit</span> <span class="p">{</span>
+        <span class="c1">// Close all open sockets...</span>
+        <span class="k">for</span> <span class="n">socket</span> <span class="k">in</span> <span class="n">connectedSockets</span><span class="o">.</span><span class="n">values</span> <span class="p">{</span>
+            <span class="n">socket</span><span class="o">.</span><span class="nf">close</span><span class="p">()</span>
+        <span class="p">}</span>
+        <span class="k">self</span><span class="o">.</span><span class="n">listenSocket</span><span class="p">?</span><span class="o">.</span><span class="nf">close</span><span class="p">()</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">run</span><span class="p">()</span> <span class="p">{</span>
+
+        <span class="k">let</span> <span class="nv">queue</span> <span class="o">=</span> <span class="kt">DispatchQueue</span><span class="o">.</span><span class="nf">global</span><span class="p">(</span><span class="nv">qos</span><span class="p">:</span> <span class="o">.</span><span class="n">userInteractive</span><span class="p">)</span>
+
+        <span class="n">queue</span><span class="o">.</span><span class="n">async</span> <span class="p">{</span> <span class="p">[</span><span class="k">unowned</span> <span class="k">self</span><span class="p">]</span> <span class="k">in</span>
+
+            <span class="k">do</span> <span class="p">{</span>
+                <span class="c1">// Create an IPV6 socket...</span>
+                <span class="k">try</span> <span class="k">self</span><span class="o">.</span><span class="n">listenSocket</span> <span class="o">=</span> <span class="kt">Socket</span><span class="o">.</span><span class="nf">create</span><span class="p">(</span><span class="nv">family</span><span class="p">:</span> <span class="o">.</span><span class="n">inet6</span><span class="p">)</span>
+
+                <span class="k">guard</span> <span class="k">let</span> <span class="nv">socket</span> <span class="o">=</span> <span class="k">self</span><span class="o">.</span><span class="n">listenSocket</span> <span class="k">else</span> <span class="p">{</span>
+
+                    <span class="nf">print</span><span class="p">(</span><span class="s">"Unable to unwrap socket..."</span><span class="p">)</span>
+                    <span class="k">return</span>
+                <span class="p">}</span>
+
+                <span class="k">try</span> <span class="n">socket</span><span class="o">.</span><span class="nf">listen</span><span class="p">(</span><span class="nv">on</span><span class="p">:</span> <span class="k">self</span><span class="o">.</span><span class="n">port</span><span class="p">)</span>
+
+                <span class="nf">print</span><span class="p">(</span><span class="s">"Listening on port: </span><span class="se">\(</span><span class="n">socket</span><span class="o">.</span><span class="n">listeningPort</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+
+                <span class="k">repeat</span> <span class="p">{</span>
+                    <span class="k">let</span> <span class="nv">newSocket</span> <span class="o">=</span> <span class="k">try</span> <span class="n">socket</span><span class="o">.</span><span class="nf">acceptClientConnection</span><span class="p">()</span>
+
+                    <span class="nf">print</span><span class="p">(</span><span class="s">"Accepted connection from: </span><span class="se">\(</span><span class="n">newSocket</span><span class="o">.</span><span class="n">remoteHostname</span><span class="se">)</span><span class="s"> on port </span><span class="se">\(</span><span class="n">newSocket</span><span class="o">.</span><span class="n">remotePort</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+                    <span class="nf">print</span><span class="p">(</span><span class="s">"Socket Signature: </span><span class="se">\(</span><span class="kt">String</span><span class="p">(</span><span class="nv">describing</span><span class="p">:</span> <span class="n">newSocket</span><span class="o">.</span><span class="n">signature</span><span class="p">?</span><span class="o">.</span><span class="n">description</span><span class="p">)</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+
+                    <span class="k">self</span><span class="o">.</span><span class="nf">addNewConnection</span><span class="p">(</span><span class="nv">socket</span><span class="p">:</span> <span class="n">newSocket</span><span class="p">)</span>
+
+                <span class="p">}</span> <span class="k">while</span> <span class="k">self</span><span class="o">.</span><span class="n">continueRunning</span>
+
+            <span class="p">}</span>
+            <span class="k">catch</span> <span class="k">let</span> <span class="nv">error</span> <span class="p">{</span>
+                <span class="k">guard</span> <span class="k">let</span> <span class="nv">socketError</span> <span class="o">=</span> <span class="n">error</span> <span class="k">as?</span> <span class="kt">Socket</span><span class="o">.</span><span class="kt">Error</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="nf">print</span><span class="p">(</span><span class="s">"Unexpected error..."</span><span class="p">)</span>
+                    <span class="k">return</span>
+                <span class="p">}</span>
+
+                <span class="k">if</span> <span class="k">self</span><span class="o">.</span><span class="n">continueRunning</span> <span class="p">{</span>
+
+                    <span class="nf">print</span><span class="p">(</span><span class="s">"Error reported:</span><span class="se">\n</span><span class="s"> </span><span class="se">\(</span><span class="n">socketError</span><span class="o">.</span><span class="n">description</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="nf">dispatchMain</span><span class="p">()</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">addNewConnection</span><span class="p">(</span><span class="nv">socket</span><span class="p">:</span> <span class="kt">Socket</span><span class="p">)</span> <span class="p">{</span>
+
+        <span class="c1">// Add the new socket to the list of connected sockets...</span>
+        <span class="n">socketLockQueue</span><span class="o">.</span><span class="n">sync</span> <span class="p">{</span> <span class="p">[</span><span class="k">unowned</span> <span class="k">self</span><span class="p">,</span> <span class="n">socket</span><span class="p">]</span> <span class="k">in</span>
+            <span class="k">self</span><span class="o">.</span><span class="n">connectedSockets</span><span class="p">[</span><span class="n">socket</span><span class="o">.</span><span class="n">socketfd</span><span class="p">]</span> <span class="o">=</span> <span class="n">socket</span>
+        <span class="p">}</span>
+
+        <span class="c1">// Get the global concurrent queue...</span>
+        <span class="k">let</span> <span class="nv">queue</span> <span class="o">=</span> <span class="kt">DispatchQueue</span><span class="o">.</span><span class="nf">global</span><span class="p">(</span><span class="nv">qos</span><span class="p">:</span> <span class="o">.</span><span class="k">default</span><span class="p">)</span>
+
+        <span class="c1">// Create the run loop work item and dispatch to the default priority global queue...</span>
+        <span class="n">queue</span><span class="o">.</span><span class="n">async</span> <span class="p">{</span> <span class="p">[</span><span class="k">unowned</span> <span class="k">self</span><span class="p">,</span> <span class="n">socket</span><span class="p">]</span> <span class="k">in</span>
+
+            <span class="k">var</span> <span class="nv">shouldKeepRunning</span> <span class="o">=</span> <span class="kc">true</span>
+
+            <span class="k">var</span> <span class="nv">readData</span> <span class="o">=</span> <span class="kt">Data</span><span class="p">(</span><span class="nv">capacity</span><span class="p">:</span> <span class="kt">EchoServer</span><span class="o">.</span><span class="n">bufferSize</span><span class="p">)</span>
+
+            <span class="k">do</span> <span class="p">{</span>
+                <span class="c1">// Write the welcome string...</span>
+                <span class="k">try</span> <span class="n">socket</span><span class="o">.</span><span class="nf">write</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="s">"Hello, type 'QUIT' to end session</span><span class="se">\n</span><span class="s">or 'SHUTDOWN' to stop server.</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+
+                <span class="k">repeat</span> <span class="p">{</span>
+                    <span class="k">let</span> <span class="nv">bytesRead</span> <span class="o">=</span> <span class="k">try</span> <span class="n">socket</span><span class="o">.</span><span class="nf">read</span><span class="p">(</span><span class="nv">into</span><span class="p">:</span> <span class="o">&amp;</span><span class="n">readData</span><span class="p">)</span>
+
+                    <span class="k">if</span> <span class="n">bytesRead</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">{</span>
+                        <span class="k">guard</span> <span class="k">let</span> <span class="nv">response</span> <span class="o">=</span> <span class="kt">String</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="n">readData</span><span class="p">,</span> <span class="nv">encoding</span><span class="p">:</span> <span class="o">.</span><span class="n">utf8</span><span class="p">)</span> <span class="k">else</span> <span class="p">{</span>
+
+                            <span class="nf">print</span><span class="p">(</span><span class="s">"Error decoding response..."</span><span class="p">)</span>
+                            <span class="n">readData</span><span class="o">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+                            <span class="k">break</span>
+                        <span class="p">}</span>
+                        <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="nf">hasPrefix</span><span class="p">(</span><span class="kt">EchoServer</span><span class="o">.</span><span class="n">shutdownCommand</span><span class="p">)</span> <span class="p">{</span>
+
+                            <span class="nf">print</span><span class="p">(</span><span class="s">"Shutdown requested by connection at </span><span class="se">\(</span><span class="n">socket</span><span class="o">.</span><span class="n">remoteHostname</span><span class="se">)</span><span class="s">:</span><span class="se">\(</span><span class="n">socket</span><span class="o">.</span><span class="n">remotePort</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+
+                            <span class="c1">// Shut things down...</span>
+                            <span class="k">self</span><span class="o">.</span><span class="nf">shutdownServer</span><span class="p">()</span>
+
+                            <span class="k">return</span>
+                        <span class="p">}</span>
+                        <span class="nf">print</span><span class="p">(</span><span class="s">"Server received from connection at </span><span class="se">\(</span><span class="n">socket</span><span class="o">.</span><span class="n">remoteHostname</span><span class="se">)</span><span class="s">:</span><span class="se">\(</span><span class="n">socket</span><span class="o">.</span><span class="n">remotePort</span><span class="se">)</span><span class="s">: </span><span class="se">\(</span><span class="n">response</span><span class="se">)</span><span class="s"> "</span><span class="p">)</span>
+                        <span class="k">let</span> <span class="nv">reply</span> <span class="o">=</span> <span class="s">"Server response: </span><span class="se">\n\(</span><span class="n">response</span><span class="se">)\n</span><span class="s">"</span>
+                        <span class="k">try</span> <span class="n">socket</span><span class="o">.</span><span class="nf">write</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="n">reply</span><span class="p">)</span>
+
+                        <span class="k">if</span> <span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="nf">uppercased</span><span class="p">()</span><span class="o">.</span><span class="nf">hasPrefix</span><span class="p">(</span><span class="kt">EchoServer</span><span class="o">.</span><span class="n">quitCommand</span><span class="p">)</span> <span class="o">||</span> <span class="n">response</span><span class="o">.</span><span class="nf">uppercased</span><span class="p">()</span><span class="o">.</span><span class="nf">hasPrefix</span><span class="p">(</span><span class="kt">EchoServer</span><span class="o">.</span><span class="n">shutdownCommand</span><span class="p">))</span> <span class="o">&amp;&amp;</span>
+                            <span class="p">(</span><span class="o">!</span><span class="n">response</span><span class="o">.</span><span class="nf">hasPrefix</span><span class="p">(</span><span class="kt">EchoServer</span><span class="o">.</span><span class="n">quitCommand</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">response</span><span class="o">.</span><span class="nf">hasPrefix</span><span class="p">(</span><span class="kt">EchoServer</span><span class="o">.</span><span class="n">shutdownCommand</span><span class="p">))</span> <span class="p">{</span>
+
+                            <span class="k">try</span> <span class="n">socket</span><span class="o">.</span><span class="nf">write</span><span class="p">(</span><span class="nv">from</span><span class="p">:</span> <span class="s">"If you want to QUIT or SHUTDOWN, please type the name in all caps. 😃</span><span class="se">\n</span><span class="s">"</span><span class="p">)</span>
+                        <span class="p">}</span>
+
+                        <span class="k">if</span> <span class="n">response</span><span class="o">.</span><span class="nf">hasPrefix</span><span class="p">(</span><span class="kt">EchoServer</span><span class="o">.</span><span class="n">quitCommand</span><span class="p">)</span> <span class="o">||</span> <span class="n">response</span><span class="o">.</span><span class="nf">hasSuffix</span><span class="p">(</span><span class="kt">EchoServer</span><span class="o">.</span><span class="n">quitCommand</span><span class="p">)</span> <span class="p">{</span>
+
+                            <span class="n">shouldKeepRunning</span> <span class="o">=</span> <span class="kc">false</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+
+                    <span class="k">if</span> <span class="n">bytesRead</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
+
+                        <span class="n">shouldKeepRunning</span> <span class="o">=</span> <span class="kc">false</span>
+                        <span class="k">break</span>
+                    <span class="p">}</span>
+
+                    <span class="n">readData</span><span class="o">.</span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+
+                <span class="p">}</span> <span class="k">while</span> <span class="n">shouldKeepRunning</span>
+
+                <span class="nf">print</span><span class="p">(</span><span class="s">"Socket: </span><span class="se">\(</span><span class="n">socket</span><span class="o">.</span><span class="n">remoteHostname</span><span class="se">)</span><span class="s">:</span><span class="se">\(</span><span class="n">socket</span><span class="o">.</span><span class="n">remotePort</span><span class="se">)</span><span class="s"> closed..."</span><span class="p">)</span>
+                <span class="n">socket</span><span class="o">.</span><span class="nf">close</span><span class="p">()</span>
+
+                <span class="k">self</span><span class="o">.</span><span class="n">socketLockQueue</span><span class="o">.</span><span class="n">sync</span> <span class="p">{</span> <span class="p">[</span><span class="k">unowned</span> <span class="k">self</span><span class="p">,</span> <span class="n">socket</span><span class="p">]</span> <span class="k">in</span>
+                    <span class="k">self</span><span class="o">.</span><span class="n">connectedSockets</span><span class="p">[</span><span class="n">socket</span><span class="o">.</span><span class="n">socketfd</span><span class="p">]</span> <span class="o">=</span> <span class="kc">nil</span>
+                <span class="p">}</span>
+
+            <span class="p">}</span>
+            <span class="k">catch</span> <span class="k">let</span> <span class="nv">error</span> <span class="p">{</span>
+                <span class="k">guard</span> <span class="k">let</span> <span class="nv">socketError</span> <span class="o">=</span> <span class="n">error</span> <span class="k">as?</span> <span class="kt">Socket</span><span class="o">.</span><span class="kt">Error</span> <span class="k">else</span> <span class="p">{</span>
+                    <span class="nf">print</span><span class="p">(</span><span class="s">"Unexpected error by connection at </span><span class="se">\(</span><span class="n">socket</span><span class="o">.</span><span class="n">remoteHostname</span><span class="se">)</span><span class="s">:</span><span class="se">\(</span><span class="n">socket</span><span class="o">.</span><span class="n">remotePort</span><span class="se">)</span><span class="s">..."</span><span class="p">)</span>
+                    <span class="k">return</span>
+                <span class="p">}</span>
+                <span class="k">if</span> <span class="k">self</span><span class="o">.</span><span class="n">continueRunning</span> <span class="p">{</span>
+                    <span class="nf">print</span><span class="p">(</span><span class="s">"Error reported by connection at </span><span class="se">\(</span><span class="n">socket</span><span class="o">.</span><span class="n">remoteHostname</span><span class="se">)</span><span class="s">:</span><span class="se">\(</span><span class="n">socket</span><span class="o">.</span><span class="n">remotePort</span><span class="se">)</span><span class="s">:</span><span class="se">\n</span><span class="s"> </span><span class="se">\(</span><span class="n">socketError</span><span class="o">.</span><span class="n">description</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">shutdownServer</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nf">print</span><span class="p">(</span><span class="s">"</span><span class="se">\n</span><span class="s">Shutdown in progress..."</span><span class="p">)</span>
+
+        <span class="k">self</span><span class="o">.</span><span class="n">continueRunning</span> <span class="o">=</span> <span class="kc">false</span>
+
+        <span class="c1">// Close all open sockets...</span>
+        <span class="k">for</span> <span class="n">socket</span> <span class="k">in</span> <span class="n">connectedSockets</span><span class="o">.</span><span class="n">values</span> <span class="p">{</span>
+
+            <span class="k">self</span><span class="o">.</span><span class="n">socketLockQueue</span><span class="o">.</span><span class="n">sync</span> <span class="p">{</span> <span class="p">[</span><span class="k">unowned</span> <span class="k">self</span><span class="p">,</span> <span class="n">socket</span><span class="p">]</span> <span class="k">in</span>
+                <span class="k">self</span><span class="o">.</span><span class="n">connectedSockets</span><span class="p">[</span><span class="n">socket</span><span class="o">.</span><span class="n">socketfd</span><span class="p">]</span> <span class="o">=</span> <span class="kc">nil</span>
+                <span class="n">socket</span><span class="o">.</span><span class="nf">close</span><span class="p">()</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+
+        <span class="kt">DispatchQueue</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="n">sync</span> <span class="p">{</span>
+            <span class="nf">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">let</span> <span class="nv">port</span> <span class="o">=</span> <span class="mi">1337</span>
+<span class="k">let</span> <span class="nv">server</span> <span class="o">=</span> <span class="kt">EchoServer</span><span class="p">(</span><span class="nv">port</span><span class="p">:</span> <span class="n">port</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="s">"Swift Echo Server Sample"</span><span class="p">)</span>
+<span class="nf">print</span><span class="p">(</span><span class="s">"Connect with a command line window by entering 'telnet ::1 </span><span class="se">\(</span><span class="n">port</span><span class="se">)</span><span class="s">'"</span><span class="p">)</span>
+
+<span class="n">server</span><span class="o">.</span><span class="nf">run</span><span class="p">()</span>
+</code></pre>
+
+<p>This server can be built by specifying the following <code>Package.swift</code> file using Swift 4.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">PackageDescription</span>
+
+<span class="k">let</span> <span class="nv">package</span> <span class="o">=</span> <span class="kt">Package</span><span class="p">(</span>
+    <span class="nv">name</span><span class="p">:</span> <span class="s">"EchoServer"</span><span class="p">,</span>
+    <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+        <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/Kitura/BlueSocket.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span><span class="s">"1.0.8"</span><span class="p">),</span>
+    <span class="p">],</span>
+    <span class="nv">targets</span><span class="p">:</span> <span class="p">[</span>
+    <span class="o">.</span><span class="nf">target</span><span class="p">(</span>
+        <span class="nv">name</span><span class="p">:</span> <span class="s">"EchoServer"</span><span class="p">,</span>
+        <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s">"Socket"</span>
+        <span class="p">]),</span>
+    <span class="p">]</span>
+<span class="p">)</span>
+</code></pre>
+
+<p>Or if you are still using Swift 3, by specifying the following <code>Package.swift</code> file.</p>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">PackageDescription</span>
+
+<span class="k">let</span> <span class="nv">package</span> <span class="o">=</span> <span class="kt">Package</span><span class="p">(</span>
+    <span class="nv">name</span><span class="p">:</span> <span class="s">"EchoServer"</span><span class="p">,</span>
+    <span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+    <span class="o">.</span><span class="kt">Package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/Kitura/BlueSocket.git"</span><span class="p">,</span> <span class="nv">majorVersion</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="nv">minor</span><span class="p">:</span> <span class="mi">0</span><span class="p">),</span>
+    <span class="p">],</span>
+    <span class="nv">exclude</span><span class="p">:</span> <span class="p">[</span><span class="s">"EchoServer.xcodeproj"</span><span class="p">]</span>
+<span class="p">)</span>
+</code></pre>
+
+<p>The following command sequence will build and run the echo server on Linux.  If running on macOS or with any toolchain <strong>NEWER</strong> than the 8/18 toolchain, you can omit the <code>-Xcc -fblocks</code> switch as it&rsquo;s no longer needed.</p>
+<pre class="highlight plaintext"><code>$ swift build -Xcc -fblocks
+$ .build/debug/EchoServer
+Swift Echo Server Sample
+Connect with a command line window by entering 'telnet ::1 1337'
+Listening on port: 1337
+</code></pre>
+<h2 id='community' class='heading'>Community</h2>
+
+<p>We love to talk server-side Swift and Kitura. Join our <a href="http://swift-at-ibm-slack.mybluemix.net/">Slack</a> to meet the team!</p>
+<h2 id='license' class='heading'>License</h2>
+
+<p>This library is licensed under Apache 2.0. Full license text is available in <a href="https://github.com/Kitura/BlueSocket/blob/master/LICENSE">LICENSE</a>.</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2020 <a class="link" href="https://github.com/Kitura/BlueSocket" target="_blank" rel="external">IBM and the Kitura project authors</a>. All rights reserved. (Last updated: 2020-11-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
