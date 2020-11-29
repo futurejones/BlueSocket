@@ -1,0 +1,7 @@
+{
+  "name": "BlueSocket"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d docs -r https://${GH_TOKEN}@github.com/futurejones/BlueSocket.git"
+  }
+}
