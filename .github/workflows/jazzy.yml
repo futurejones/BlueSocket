@@ -12,11 +12,11 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
+      - name: install gh-pages
+        run:  |
+          npm install -g gh-pages
       - name: install jazzy
         run:  |
-          echo installing gh-pages!
-          npm install -g gh-pages
-          echo installing jazzy!
           gem install jazzy
       - name: create docs
         env:
@@ -24,8 +24,7 @@ jobs:
           USER_NAME: ${{ secrets.USER_NAME }}
           USER_EMAIL: ${{ secrets.USER_EMAIL }}
         run:  |
-          echo Building Docs!
           git config --global user.name "${USER_NAME}"
           git config --global user.email "${USER_EMAIL}"
           jazzy
-          gh-pages -d docs -r https://${GH_TOKEN}@github.com/futurejones/BlueSocket.git
+          npm deploy
