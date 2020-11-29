@@ -13,7 +13,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: install jazzy
-        run: gem install jazzy
+        run:  |
+          npm install -g gh-pages
+          gem install jazzy
       - name: create docs
         env:
           GH_Token: ${{ secrets.GITHUB_TOKEN }}
