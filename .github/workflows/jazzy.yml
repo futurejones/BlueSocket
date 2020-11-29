@@ -15,4 +15,13 @@ jobs:
       - name: install jazzy
         run: gem install jazzy
       - name: create docs
-        run: jazzy
+        env:
+          GH_Token: ${{ secrets.GITHUB_TOKEN }}
+          USER_NAME: ${{ secrets.USER_NAME }}
+          USER_EMAIL: ${{ secrets.USER_EMAIL }}
+        run:  |
+          echo Starting Build!
+          git config --global user.name "${USER_NAME}"
+          git config --global user.email "${USER_EMAIL}"
+          jazzy
+          gh-pages -d public -r https://${GH_TOKEN}@github.com/futurejones/BlueSocket.git
